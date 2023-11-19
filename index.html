@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search</title>
+    <!--TODO.....Toastr Links....... -->
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="toggle" class="animate__animated animate__zoomInDown">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 256 256"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="#000000"
+          d="M235.54 150.21a104.84 104.84 0 0 1-37 52.91A104 104 0 0 1 32 120a103.09 103.09 0 0 1 20.88-62.52a104.84 104.84 0 0 1 52.91-37a8 8 0 0 1 10 10a88.08 88.08 0 0 0 109.8 109.8a8 8 0 0 1 10 10Z"
+        />
+      </svg>
+    </button>
+    <h4 id="tag">
+      Created by
+      <span
+        ><a
+          href=""
+          target="blank"
+          >Tanishka</a
+        ></span
+      >
+      ❤
+    </h4>
+    <h1 class="animate__animated animate__backInDown">GeeksterMon</h1>
+    <div class="functions">
+      <form action="" id="searchForm">
+        <input
+          type="text"
+          name=""
+          id="searchBar"
+          placeholder="search by pokemon name"
+          class="animate__animated animate__backInLeft"
+        />
+      </form>
+      <form action="" id="filterForm">
+        <div class="filterContainer">
+          <select
+            name=""
+            id="filterOption"
+            class="animate__animated animate__fadeInBottomLeft"
+          >
+            <option value="" selected disabled>--Type--</option>
+          </select>
+          <button
+            id="filterButton"
+            class="animate__animated animate__fadeInBottomLeft"
+          >
+            Filter By Type
+          </button>
+          <button
+            id="sortButton"
+            class="animate__animated animate__fadeInBottomRight"
+          >
+            Sort By Height <i class="fa-solid fa-angles-up"></i>
+          </button>
+        </div>
+        <button
+          onclick="resetBtn(event)"
+          class="animate__animated animate__fadeInBottomRight"
+        >
+          Reset
+        </button>
+      </form>
+    </div>
+    <div id="pokemon-container"></div>
+    <dialog id="myDialog">
+      <div class="modal"></div>
+    </dialog>
+    <a href="#" id="top"
+      ><i class="go-top fa-solid fa-chevron-up" style="color: #000000"></i
+    ></a>
+    <!--TODO ------------Font-Awesome------------ -->
+    <script
+      src="https://kit.fontawesome.com/08f45ad4dd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--TODO -----------------Toastr Links----------------- -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
